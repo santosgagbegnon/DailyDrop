@@ -1,0 +1,5 @@
+('/Users/santos/Developer/Swift/Daily Drop/Daily Drop/build/addtodatabase/requests_toolbelt-0.7.0-py2.7.egg',
+ None,
+ set(['*.py', '*.pyc', '*.pyd', '*.pyo', '*.so', 'EGG-INFO']),
+ 'DATA',
+ [])

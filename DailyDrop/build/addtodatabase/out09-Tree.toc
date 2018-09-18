@@ -1,0 +1,5 @@
+('/Users/santos/Developer/Swift/Daily Drop/Daily Drop/build/addtodatabase/python_jwt-2.0.1-py2.7.egg',
+ None,
+ set(['*.py', '*.pyc', '*.pyd', '*.pyo', '*.so', 'EGG-INFO']),
+ 'DATA',
+ [])

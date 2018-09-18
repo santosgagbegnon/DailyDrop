@@ -1,0 +1,13 @@
+('/Users/santos/Developer/Swift/Daily Drop/Daily Drop/build/addtodatabase/gax_google_logging_v2-0.8.3-py2.7.egg',
+ None,
+ set(['*.py', '*.pyc', '*.pyd', '*.pyo', '*.so', 'EGG-INFO']),
+ 'DATA',
+ [('google/cloud/logging/v2/logging_service_v2_client_config.json',
+   '/Users/santos/Developer/Swift/Daily Drop/Daily Drop/build/addtodatabase/gax_google_logging_v2-0.8.3-py2.7.egg/google/cloud/logging/v2/logging_service_v2_client_config.json',
+   'DATA'),
+  ('google/cloud/logging/v2/metrics_service_v2_client_config.json',
+   '/Users/santos/Developer/Swift/Daily Drop/Daily Drop/build/addtodatabase/gax_google_logging_v2-0.8.3-py2.7.egg/google/cloud/logging/v2/metrics_service_v2_client_config.json',
+   'DATA'),
+  ('google/cloud/logging/v2/config_service_v2_client_config.json',
+   '/Users/santos/Developer/Swift/Daily Drop/Daily Drop/build/addtodatabase/gax_google_logging_v2-0.8.3-py2.7.egg/google/cloud/logging/v2/config_service_v2_client_config.json',
+   'DATA')])

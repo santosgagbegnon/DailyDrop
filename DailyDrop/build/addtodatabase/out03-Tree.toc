@@ -1,0 +1,7 @@
+('/Library/Python/2.7/site-packages/httplib2-0.11.3-py2.7.egg',
+ None,
+ set(['*.py', '*.pyc', '*.pyd', '*.pyo', '*.so', 'EGG-INFO']),
+ 'DATA',
+ [('httplib2/cacerts.txt',
+   '/Library/Python/2.7/site-packages/httplib2-0.11.3-py2.7.egg/httplib2/cacerts.txt',
+   'DATA')])

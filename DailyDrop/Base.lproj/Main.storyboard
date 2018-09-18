@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFCompactDisplay-Bold.otf">
+            <string>SFCompactDisplay-Bold</string>
+        </array>
+        <array key="SFCompactDisplay-Medium.otf">
+            <string>SFCompactDisplay-Medium</string>
+        </array>
+        <array key="SFCompactDisplay-Regular.otf">
+            <string>SFCompactDisplay-Regular</string>
+        </array>
+        <array key="SFCompactDisplay-Semibold.otf">
+            <string>SFCompactDisplay-Semibold</string>
+        </array>
+        <array key="SFCompactText-Regular.otf">
+            <string>SFCompactText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Initial LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="logInView" id="BYZ-38-t0r" customClass="InitialLoginVC" customModule="Daily_Drop" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NavReckless.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6ZS-8b-t4n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mku-as-cSh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="dIx-ni-THd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Drop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poS-NA-Yh0">
+                                            <rect key="frame" x="72" y="49" width="230" height="60"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="50"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nav - Reckless" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iod-MN-KGx">
+                                            <rect key="frame" x="66" y="468" width="272" height="51"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="SFCompactDisplay-Regular" family="SF Compact Display" pointSize="19"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NavReckless.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Rbc-0Z-z21">
+                                            <rect key="frame" x="47" y="191" width="281" height="281"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSQ-mm-qsi" customClass="UICustomButton" customModule="Daily_Drop" customModuleProvider="target">
+                                            <rect key="frame" x="25" y="621" width="324" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.89836615112227236" green="0.28895393698048566" blue="0.55878640722343842" alpha="0.77769156678082196" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="26"/>
+                                            <state key="normal" title="LOGIN WITH SPOTIFY">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="31"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <segue destination="C0k-FT-Rvn" kind="popoverPresentation" popoverAnchorView="bSQ-mm-qsi" id="tA8-7T-VhC">
+                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                </segue>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find the newest music instantly." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7c-93-i6j">
+                                <rect key="frame" x="80" y="106" width="222" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Regular" family="SF Compact Display" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundAlbumArt" destination="6ZS-8b-t4n" id="wal-D0-Tqc"/>
+                        <outlet property="foregroundAlbumArt" destination="Rbc-0Z-z21" id="YBI-ph-Ro7"/>
+                        <outlet property="musicNameLabel" destination="iod-MN-KGx" id="SOV-jZ-s3B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-293.60000000000002" y="10.344827586206897"/>
+        </scene>
+        <!--Spotify WebVC-->
+        <scene sceneID="zJe-CI-P1v">
+            <objects>
+                <viewController id="C0k-FT-Rvn" customClass="SpotifyWebVC" customModule="Daily_Drop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bxh-i5-kl8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3x2-ka-zL0">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" red="0.21176470588235294" green="0.51372549019607838" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3x2-ka-zL0" firstAttribute="top" secondItem="7Y4-Ck-GS8" secondAttribute="top" id="bVK-MW-1sz"/>
+                            <constraint firstItem="3x2-ka-zL0" firstAttribute="leading" secondItem="7Y4-Ck-GS8" secondAttribute="leading" id="xRd-0U-io5"/>
+                            <constraint firstItem="3x2-ka-zL0" firstAttribute="trailing" secondItem="7Y4-Ck-GS8" secondAttribute="trailing" id="xwg-W8-xnZ"/>
+                            <constraint firstItem="3x2-ka-zL0" firstAttribute="bottom" secondItem="7Y4-Ck-GS8" secondAttribute="bottom" id="yuq-MD-Upc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Y4-Ck-GS8"/>
+                    </view>
+                    <connections>
+                        <outlet property="SpotifyWebView" destination="3x2-ka-zL0" id="3Cd-Ig-R6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9L0-3Q-dow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="520.79999999999995" y="566.26686656671666"/>
+        </scene>
+        <!--Music FeaturesVC-->
+        <scene sceneID="bH4-X8-7tz">
+            <objects>
+                <viewController storyboardIdentifier="popUpView" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CyZ-Ku-qqB" customClass="MusicFeaturesVC" customModule="Daily_Drop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QBI-0K-52B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kYW-8Z-Hfm" customClass="UIRoundableView" customModule="Daily_Drop" customModuleProvider="target">
+                                <rect key="frame" x="87" y="614" width="200" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywQ-ZL-nUf" customClass="UICustomButton" customModule="Daily_Drop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="18"/>
+                                        <state key="normal" title="Play whole song">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionButtonPressed:" destination="CyZ-Ku-qqB" eventType="touchUpInside" id="Vxo-ya-VVE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vL6-d1-Rnv" customClass="UICustomButton" customModule="Daily_Drop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="200" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="18"/>
+                                        <state key="normal" title="Skip album">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionButtonPressed:" destination="CyZ-Ku-qqB" eventType="touchUpInside" id="gcp-ti-Ejd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.51372549020000002" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="xTz-GD-jOf"/>
+                    </view>
+                    <connections>
+                        <outlet property="optionsView" destination="kYW-8Z-Hfm" id="POG-ym-jP8"/>
+                        <outlet property="secondOption" destination="vL6-d1-Rnv" id="If7-Cr-N2s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQc-Oe-gSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878" y="-1165"/>
+        </scene>
+        <!--Discovery-->
+        <scene sceneID="MZT-7K-vbY">
+            <objects>
+                <viewController storyboardIdentifier="discoveryView" id="dB8-Gd-CYi" customClass="DiscoveryVC" customModule="Daily_Drop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xMY-BY-SAv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ECB-8D-9Am">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DYl-8e-TFp">
+                                <rect key="frame" x="0.0" y="-13" width="375" height="825"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="vEx-GU-xt7">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="825"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xg5-zT-gL6" customClass="UIMusicCardView" customModule="Daily_Drop" customModuleProvider="target">
+                                            <rect key="frame" x="34" y="154" width="306" height="517"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Dpb-dC-JBb">
+                                                    <rect key="frame" x="25" y="123" width="258" height="264"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A$AP ROCKY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXX-kN-Kkp">
+                                                    <rect key="frame" x="10" y="73" width="286" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.17644029059999999" green="0.7020443488" blue="0.99051016569999994" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="21"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Testing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="0Hf-8Z-I70">
+                                                    <rect key="frame" x="9" y="17" width="291" height="73"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="38"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xN9-Gu-vGU">
+                                                    <rect key="frame" x="23" y="405" width="262" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </slider>
+                                                <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esa-r9-fKO">
+                                                    <rect key="frame" x="118" y="442" width="72" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="pausedbutton"/>
+                                                    <connections>
+                                                        <action selector="playBackStatusButtonPressed:" destination="dB8-Gd-CYi" eventType="touchUpInside" id="czk-bM-cYK"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3653949058219178" colorSpace="calibratedRGB"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="0xMusicCard"/>
+                                            <gestureRecognizers/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="ap6-wI-j8g" appends="YES" id="tAs-Dm-BT4"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21176470588235294" green="0.51372549019607838" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="vnD-WO-KSt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" systemItem="search" id="am9-SW-Xqv">
+                        <inset key="imageInsets" minX="21" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Discovery" largeTitleDisplayMode="always" id="DUr-dM-IAj"/>
+                    <connections>
+                        <outlet property="albumArtView" destination="Dpb-dC-JBb" id="CM8-Us-zgm"/>
+                        <outlet property="artistNameLabel" destination="VXX-kN-Kkp" id="P0c-aF-4wK"/>
+                        <outlet property="audioProgressBar" destination="xN9-Gu-vGU" id="Cs9-Z0-Web"/>
+                        <outlet property="blurredAlbumArtBG" destination="ECB-8D-9Am" id="sNn-xT-I4G"/>
+                        <outlet property="mainView" destination="xMY-BY-SAv" id="Dl8-mG-NrF"/>
+                        <outlet property="musicCard" destination="xg5-zT-gL6" id="1D9-N3-EeV"/>
+                        <outlet property="playbackStatusButton" destination="esa-r9-fKO" id="u3v-D1-pmd"/>
+                        <outlet property="songTitleLabel" destination="0Hf-8Z-I70" id="tGN-vQ-Sla"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCz-Bw-z7a" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ap6-wI-j8g"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="-352.46305418719214"/>
+        </scene>
+        <!--Genres-->
+        <scene sceneID="pXo-xh-LMq">
+            <objects>
+                <viewController id="XpL-V0-I30" customClass="GenreVC" customModule="Daily_Drop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bW-cf-YWr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Mh0-Wv-B3h">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" red="0.21176470588235294" green="0.51372549019607838" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.5" minimumInteritemSpacing="0.0" id="w4y-o8-t5g">
+                                    <size key="itemSize" width="187" height="180"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="genreCell" id="QbR-AU-UlZ" customClass="GenreCollectionViewCell" customModule="Daily_Drop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="187" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="187" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PURPP.png" translatesAutoresizingMaskIntoConstraints="NO" id="9vS-if-yJM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="180"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jKO-yl-jFk">
+                                                    <rect key="frame" x="20" y="20" width="147" height="140"/>
+                                                    <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="29"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="jKO-yl-jFk" firstAttribute="centerX" secondItem="QbR-AU-UlZ" secondAttribute="centerX" id="7gY-rl-kAW"/>
+                                            <constraint firstItem="9vS-if-yJM" firstAttribute="height" secondItem="QbR-AU-UlZ" secondAttribute="height" id="M3z-Vx-fIW"/>
+                                            <constraint firstItem="jKO-yl-jFk" firstAttribute="leading" secondItem="QbR-AU-UlZ" secondAttribute="leading" constant="20" id="Pa5-tk-r1C"/>
+                                            <constraint firstAttribute="bottom" secondItem="jKO-yl-jFk" secondAttribute="bottom" constant="20" id="deG-uI-kk1"/>
+                                            <constraint firstItem="9vS-if-yJM" firstAttribute="width" secondItem="QbR-AU-UlZ" secondAttribute="width" id="mWk-RV-8Ru"/>
+                                            <constraint firstItem="jKO-yl-jFk" firstAttribute="centerY" secondItem="QbR-AU-UlZ" secondAttribute="centerY" id="naT-aA-Rgt"/>
+                                            <constraint firstItem="9vS-if-yJM" firstAttribute="centerY" secondItem="QbR-AU-UlZ" secondAttribute="centerY" id="rQD-8k-Qb1"/>
+                                            <constraint firstItem="9vS-if-yJM" firstAttribute="centerX" secondItem="QbR-AU-UlZ" secondAttribute="centerX" id="wsv-kb-hrn"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="genreImageView" destination="9vS-if-yJM" id="xgF-yQ-lTL"/>
+                                            <outlet property="genreLabel" destination="jKO-yl-jFk" id="8yQ-aN-p0u"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="XpL-V0-I30" id="hDF-0d-BHa"/>
+                                    <outlet property="delegate" destination="XpL-V0-I30" id="ByH-Xt-5Vx"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mh0-Wv-B3h" firstAttribute="centerY" secondItem="apy-CB-zhw" secondAttribute="centerY" id="8BN-PV-WTa"/>
+                            <constraint firstItem="Mh0-Wv-B3h" firstAttribute="centerX" secondItem="apy-CB-zhw" secondAttribute="centerX" id="FQe-yU-1R2"/>
+                            <constraint firstItem="Mh0-Wv-B3h" firstAttribute="top" secondItem="apy-CB-zhw" secondAttribute="top" id="Vnj-Eb-d3r"/>
+                            <constraint firstItem="Mh0-Wv-B3h" firstAttribute="leading" secondItem="apy-CB-zhw" secondAttribute="leading" id="iaM-Pc-Lnw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="apy-CB-zhw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Discover" image="portraitDiscoveryIcon" landscapeImage="landscapeDiscoveryIcon" id="ha3-hf-iL5"/>
+                    <navigationItem key="navigationItem" title="Genres" id="Nab-w4-tgm"/>
+                    <connections>
+                        <outlet property="genreCollecionView" destination="Mh0-Wv-B3h" id="H4e-et-d7Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7GL-0x-Q2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213.5999999999999" y="-1165.3673163418291"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JYJ-pX-eTR">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarController" automaticallyAdjustsScrollViewInsets="NO" id="6vj-tL-8yI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="wQQ-Sq-OY8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.21176470588235294" green="0.51372549019607838" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.21176470588235294" green="0.51372549019607838" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.99607843137254903" green="0.94509803921568625" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Dve-uW-wgG" kind="relationship" relationship="viewControllers" id="1Or-Ol-I0x"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5G-oJ-bsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="-197"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="FA9-FM-OdP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dve-uW-wgG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" image="portraitDiscoveryIcon" landscapeImage="landscapeDiscoveryIcon" id="Okb-JJ-dxv">
+                        <color key="badgeColor" red="0.21176470588235294" green="0.45882352941176469" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Xmo-tW-iEX">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.21176470588235294" green="0.51372549019607838" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XpL-V0-I30" kind="relationship" relationship="rootViewController" id="q23-CP-5qu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4al-ZD-ElT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="-1116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NavReckless.jpg" width="745" height="745"/>
+        <image name="PURPP.png" width="910" height="902"/>
+        <image name="landscapeDiscoveryIcon" width="18" height="18"/>
+        <image name="pausedbutton" width="117" height="117"/>
+        <image name="portraitDiscoveryIcon" width="25" height="25"/>
+        <image name="watch.jpg" width="640" height="633"/>
+    </resources>
+</document>
